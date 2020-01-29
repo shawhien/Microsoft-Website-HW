@@ -1,0 +1,81 @@
+* {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    width: 1065px;
+    height: 40px;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    margin: 4px 8px;
+}
+
+.topnav {
+    display: flex;
+    width: 550px;
+    height: 40px;
+    margin: 0 0;
+}
+
+.navposition {
+    position: relative;
+    top: 15px;
+}
+
+.navposition:hover {
+    text-decoration: underline;
+}
+
+.smallerimages1, .secondRowImg {
+    display: flex;
+    justify-content: center;
+    padding: 20px 45px;
+    width: 1050 px;
+    height: 400px;
+}
+
+.firstRowImg, .secondRowImg {
+    width: 200px;
+    height: 140px;
+}
+
+.smallerimages1div, .smallerimages2 {
+    width: 200px;
+    height: 330px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+    .splash1 {
+        /*i think 1100px works better, but the image for 1050px is A+ and matches my icon. totally worth it.*/
+        width: 1050px;
+        height: 300px;
+    }
+
+    header {
+        max-width: 800px;
+    }
+
+    .topnav {
+        max-width: 400px;
+    }
+
+    .smallerimages1, .smallerimages2 {
+        max-width: 600px;
+        min-height: 715px;
+        padding: 14 20 0 20;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+
+    .smallerimages1, .smallerimages2 {
+        max-width: 350px;
+        min-height: 1300px;
+    }
